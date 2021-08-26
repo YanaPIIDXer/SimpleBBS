@@ -1,7 +1,7 @@
 <template>
   <div>
     <NavBar />
-    <h1>会員制掲示板</h1>
+    <h1 class="mt-5">会員制掲示板</h1>
   </div>
 </template>
 
