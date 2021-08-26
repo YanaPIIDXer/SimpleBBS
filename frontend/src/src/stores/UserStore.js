@@ -1,6 +1,6 @@
 import Vuex from 'vuex'
 
-const store = Vuex.Store({
+const store = new Vuex.Store({
     state: {
         userInfo: null,
     },
