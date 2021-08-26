@@ -3,7 +3,7 @@ module.exports = {
       port: 80,
       watchOptions: {
         poll: true
-      }
+      },
     }
   }
   
