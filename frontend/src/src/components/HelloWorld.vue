@@ -3,12 +3,12 @@
 </template>
 
 <script>
-import conn from '../modules/BasicConnection'
+import { getApi } from '../modules/APIConnection'
 
 export default {
   methods: {
     onClickButton: async () => {
-      var res = await conn.get("http://localhost:3000/api/boards/list");
+      var res = await getApi("/boards/list");
       console.log(res.data);
     }
   }
