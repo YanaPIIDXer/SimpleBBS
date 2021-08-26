@@ -11,6 +11,8 @@ app.get("/", (req, res) => {
     res.json({ message: "Hello, World!" });
 });
 
+app.use("/api/boards", require("./api/boards.js"));
+
 app.use(logError());
 
 app.listen(PORT, () => {
