@@ -10,11 +10,13 @@ const store = Vuex.Store({
         }
     },
     mutations: {
-        logIn: (state, userInfo) => {
-            state.userInfo = userInfo;
-        },
-        logOut: (state) => {
-            state.userInfo = null;
+        logIn: (state, payload) => {
+            state.userInfo = payload.userInfo;
+        }
+    },
+    actions: {
+        logOut: (context) => {
+            context.state.userInfo = null;
         }
     }
 });
