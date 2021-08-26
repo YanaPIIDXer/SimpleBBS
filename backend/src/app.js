@@ -1,8 +1,11 @@
 const express = require("express");
 const { logInfo, logError } = require("./logging/logging.application.js");
+const cors = require("cors");
 
 const app = express();
 const PORT = 3000;
+
+app.use(cors());
 
 app.get("/", (req, res) => {
     res.json({ message: "Hello, World!" });
