@@ -8,8 +8,8 @@ import conn from '../modules/BasicConnection'
 export default {
   methods: {
     onClickButton: async () => {
-      var res = await conn.get("http://localhost:3000");
-      alert(res.data["message"]);
+      var res = await conn.get("http://localhost:3000/api/boards/list");
+      console.log(res.data);
     }
   }
 }
