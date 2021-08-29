@@ -1,18 +1,13 @@
 <template>
   <div>
-    <NavBar />
     <h1 class="mt-5">会員制掲示板</h1>
   </div>
 </template>
 
 <script>
-import NavBar from './NavBar.vue'
 
 export default {
   name: "Top",
-  components: {
-    NavBar
-  }
 }
 </script>
 
